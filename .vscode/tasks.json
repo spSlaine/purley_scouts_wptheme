@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Sass Compile",
+            "type": "shell",
+            "command": "node-sass ./sass/style.scss ./style.css",
+            "group": "build",
+            "problemMatcher": [
+                "$node-sass"
+            ]
+        },
+        {
+            "label": "Sass Compile - Production",
+            "type": "shell",
+            "command": "node-sass --output-style compressed ./sass/style.scss ./style.css",
+            "group": "build",
+            "problemMatcher": [
+                "$node-sass"
+            ]
+        }
+    ]
+}

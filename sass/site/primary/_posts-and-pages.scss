@@ -1,0 +1,89 @@
+.site {
+	background-color: $color__background-page;
+	padding: 0 10px;
+	width: 100%;
+	@media screen and (min-width: $site__site-max-content-width){
+		padding: 0;
+		margin: 0 auto;
+		width: $site__site-max-content-width;
+	}
+}
+
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+
+
+.site-footer {
+	border-top: 2px solid $color__scout_green;
+	padding-top: 2rem;
+	.site-footer-wrapper {
+
+		ul#footer-menu {
+			list-style: none;
+			margin: 0 0 2rem 0;
+			padding: 0;
+			font-size: 0.75rem;
+		}
+
+		@media screen and (min-width: $site__site-min-content-width) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: stretch;
+
+			> * {
+				flex: 1 0 250px;
+			}
+
+			> div.menu-footer-container {
+				flex: 0 0 250px;
+			}
+
+			ul#footer-menu {
+				margin: 0;
+			}
+		}
+
+	}
+
+	.site-info {
+		font-size: 0.75rem;
+		text-align: center;
+	}
+
+}
+
+
+ol.tribe-list-widget {
+	margin: 0;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+			
