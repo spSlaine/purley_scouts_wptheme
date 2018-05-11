@@ -47,10 +47,14 @@ if ( ! function_exists( 'purley_scouts_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'purley_scouts' ),
 		) );
 
-
 		register_nav_menus( array(
 			'menu-2' => esc_html__( 'Footer', 'purley_scouts' ),
 		) );
+
+		register_nav_menus( array(
+			'menu-3' => esc_html__( 'Top', 'purley_scouts' ),
+		) );
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments

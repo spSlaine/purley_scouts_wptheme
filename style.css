@@ -645,6 +645,45 @@ a {
   width: 50%; }
 
 /*--------------------------------------------------------------
+## Top menu
+--------------------------------------------------------------*/
+.top-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
+  .top-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .top-navigation ul li {
+      float: left;
+      position: relative;
+      padding: 0 0.2em; }
+  .top-navigation > ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .top-navigation > ul > li {
+      border-right: 5px solid #fff; }
+      .top-navigation > ul > li.current-menu-ancestor::after, .top-navigation > ul > li.current-menu-item::after, .top-navigation > ul > li:hover::after, .top-navigation > ul > li:focus::after, .top-navigation > ul > li.focus::after {
+        width: 0px;
+        height: 0px;
+        background: #fff;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #ff8200;
+        border-left: 5px solid #fff;
+        border-bottom: 5px solid #ff8200; }
+    .top-navigation > ul > ul {
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 0; }
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */

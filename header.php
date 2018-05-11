@@ -23,7 +23,14 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'purley_scouts' ); ?></a>
-
+	<nav id="top-navigation" class="top-navigation">
+	<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-3',
+				'menu_id'        => 'top-menu',
+			) );
+			?>
+	</nav>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
@@ -32,11 +39,11 @@
 			<header>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
-			$purley_scouts_description = get_bloginfo( 'description', 'display' );
-			if ( $purley_scouts_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $purley_scouts_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+				$purley_scouts_description = get_bloginfo( 'description', 'display' );
+				if ( $purley_scouts_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $purley_scouts_description; /* WPCS: xss ok. */ ?></p>
+				<?php endif; ?>
 			</header>
 		</div><!-- .site-branding -->
 
