@@ -1,0 +1,31 @@
+{
+  "name": "purley_scouts",
+  "version": "1.0.0",
+  "description": "WordPress Theme",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "hamburgers": "^0.9.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spSlaine/purley_scouts_wptheme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Simon Phillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spSlaine/purley_scouts_wptheme/issues"
+  },
+  "homepage": "https://github.com/spSlaine/purley_scouts_wptheme#readme"
+}

@@ -34,10 +34,12 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
+			button.classList.remove("is-active");
 			menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
+			button.classList.add("is-active");
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}
 	};
