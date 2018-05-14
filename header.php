@@ -59,4 +59,6 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+		<?php if ( has_header_image() ) { ?>
 		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+		<?php } ?>	
