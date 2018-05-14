@@ -1,15 +1,11 @@
 {
   "name": "purley_scouts",
   "version": "1.0.0",
-  "description": "WordPress Theme",
-  "main": "index.js",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
-    "hamburgers": "^0.9.3"
-  },
+  "description": "Purley Scout Group - WordPress Theme",
+  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "hamburgers": "^0.9.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
